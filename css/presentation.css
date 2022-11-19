@@ -45,12 +45,13 @@ body {
 
 .section-presentation {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 5vh;
 }
 
 .present-me {
-    margin-left: 7vw;
     align-items: center;
 }
 
@@ -65,16 +66,17 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 25px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 35px;
 }
 
 .lign {
     background-color: white;
-    width: 50vw;
+    width: 40vw;
     height: 3px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 35px;
+    border-radius: 2px;
 }
 
 .txt-scroll {
@@ -83,12 +85,14 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 14px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .img-illustration-laura {
-    position: absolute;
-    width: 425px;
+    position: sticky;
+    width: 450px;
+    margin-top: 80px;
+    z-index: 100;
 }
 
 
