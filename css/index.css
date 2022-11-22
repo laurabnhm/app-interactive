@@ -1,0 +1,106 @@
+/************************************/
+/************* GÉNÉRAL **************/
+/************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/background-1.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gabarit {
+    width: auto;
+}
+
+/************************************/
+/************** MENU ****************/
+/************************************/
+
+.menu {
+    color: white;
+    font-family: mundial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 2vw;
+    /*position: fixed; MARCHE PAS*/
+}
+
+.menu-txt {
+    padding: 1vw;
+}
+
+
+/************************************/
+/********** PRÉSENTATION ************/
+/************************************/
+
+.section-presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 6vh;
+}
+
+.present-me {
+    align-items: center;
+}
+
+.img-laura-bonhomme {
+    width: 450px;
+    margin-bottom: 35px;
+}
+
+.txt-jobs {
+    color: white;
+    font-family: mundial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-bottom: 35px;
+}
+
+.lign {
+    background-color: white;
+    width: 40vw;
+    height: 3px;
+    margin-left: 15px;
+    margin-bottom: 35px;
+    border-radius: 2px;
+}
+
+.txt-scroll {
+    color: white;
+    font-family: mundial, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.img-illustration-laura {
+    position: sticky;
+    width: 450px;
+    margin-top: 80px;
+    z-index: 100;
+}
+
+
+/************************************/
+/************** HOVER ***************/
+/************************************/
+
+.menu-txt:hover {
+	cursor: pointer;
+    opacity: 0.5;
+}
