@@ -31,11 +31,16 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 2vw;
-    /*position: fixed; MARCHE PAS*/
+    position: fixed; 
+    right:0;
+    top: 0;
+    z-index: 2;
 }
 
 .menu-txt {
     padding: 1vw;
+    text-decoration:none;
+    color: white;
 }
 
 
@@ -92,7 +97,7 @@ body {
     position: sticky;
     width: 450px;
     margin-top: 80px;
-    z-index: 100;
+    z-index: 1;
 }
 
 
