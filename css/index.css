@@ -15,11 +15,37 @@ body {
 
 .gabarit {
     width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.gabarit-int {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin-top: 20vh;
+    /*overflow:auto;
+    white-space: nowrap;*/
 }
 
 /************************************/
 /************** MENU ****************/
 /************************************/
+
+.section-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+}
+
+.img-logo-menu {
+    width: 50px;
+    padding: 25px;
+}
 
 .menu {
     color: white;
@@ -31,14 +57,10 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 2vw;
-    position: fixed; 
-    right:0;
-    top: 0;
-    z-index: 2;
 }
 
 .menu-txt {
-    padding: 1vw;
+    padding-right: 1vw;
     text-decoration:none;
     color: white;
 }
@@ -53,7 +75,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
-    margin-top: 6vh;
+    margin-bottom: 8vw;
 }
 
 .present-me {
@@ -84,7 +106,7 @@ body {
     border-radius: 2px;
 }
 
-.txt-scroll {
+.txt-message {
     color: white;
     font-family: mundial, sans-serif;
     font-weight: 600;
@@ -96,8 +118,85 @@ body {
 .img-illustration-laura {
     position: sticky;
     width: 450px;
-    margin-top: 80px;
-    z-index: 1;
+    margin-left: 13vw;
+}
+
+
+/************************************/
+/************ FORMATION *************/
+/************************************/
+
+.section-formation {
+    color: white;
+    font-family: mundial, sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 8vw;
+}
+
+.img-formation-title {
+    width: 50vw;
+    opacity: 0.8;
+    margin-left: 8vw;
+    margin-bottom: 5vw;
+}
+
+.formation-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 300px;
+    overflow:auto;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.formation-annee {
+    font-weight: 600;
+    font-size: 20px;
+    width: 150px;
+    background-color : rgba(255, 255, 255, 0.2);
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.formation-diplome {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.formation-mention {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.formation-lieu {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+/************************************/
+/************ SÉPARATION ************/
+/************************************/
+
+.separation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-background {
+    width: 90%;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
 }
 
 
@@ -108,4 +207,11 @@ body {
 .menu-txt:hover {
 	cursor: pointer;
     opacity: 0.5;
+}
+
+.img-logo-menu:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    scale: 1.1;
+    transition: 0.2s;
 }

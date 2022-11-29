@@ -1,5 +1,4 @@
-document.querySelector('#menu-presentation')
-    .addEventListener('click', reloadPage);
+document.querySelector('.img-logo-menu').addEventListener('click', reloadPage);
 
 function reloadPage() {
   console.log('reload');
