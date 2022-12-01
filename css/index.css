@@ -126,9 +126,26 @@ body {
 .img-illustration-laura {
     position: sticky;
     width: 450px;
-    margin-left: 13vw;
+    margin-left: 10vw;
 }
 
+
+/************************************/
+/************ SÉPARATION ************/
+/************************************/
+
+.separation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-background {
+    width: 90%;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+}
 
 /************************************/
 /************ FORMATION *************/
@@ -148,8 +165,8 @@ body {
 .formation-container {
     display: flex;
     flex-direction: column;
-    width: 153vw;
-    height: 300px;
+    width: 160vw;
+    height: 200px;
     padding-left: 8vw;
     overflow: auto;
     white-space: nowrap;
@@ -164,7 +181,7 @@ body {
 
 .formation-annee {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.2vw;
     width: 8vw;
     background-color : rgba(255, 255, 255, 0.2);
     border: solid;
@@ -186,15 +203,15 @@ body {
 }
 
 #inter-ligne-prepa-bts {
-    width: 13.5vw;
+    width: 15.3vw;
 }
 
 #inter-ligne-bts-inge {
-    width: 19.7vw;
+    width: 23vw;
 }
 
 #inter-ligne-inge-canada {
-    width: 24vw;
+    width: 27.1vw;
 }
 
 .formation-txt {
@@ -209,17 +226,17 @@ body {
 
 .formation-diplome {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 1.9vw;
 }
 
 .formation-mention {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 1vw;
 }
 
 .formation-lieu {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.2vw;
     opacity: 0.8;
 }
 
@@ -239,6 +256,7 @@ body {
     justify-content: flex-start;
     margin-top: 8vw;
     width: 100%;
+    margin-bottom: 8vw;
 }
 
 .projets-container {
@@ -249,34 +267,72 @@ body {
 
 .projets-themes {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.ligne-projets {
+    display: flex;
     flex-direction: row;
 }
 
 .projets-box {
-    width: 15%;
-    height: 200px;
+    width: 28%;
+    height: 230px;
+    border: solid;
+    border-color: white;
+    border-width: 4px;
+    border-radius: 5px;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    align-items: center;
+}
+
+#projets-design {
+    background-image: url(../img/projet-design.png);
+    background-size: cover;
+}
+
+#projets-uxui {
+    background-image: url(../img/projet-uxui.jpg);
+    background-size: cover;
+}
+
+#projets-motion {
+    background-image: url(../img/projet-motion.png);
+    background-size: cover;
+}
+
+#projets-photo {
+    background-image: url(../img/projet-photo.png);
+    background-size: cover;
+}
+
+#projets-3d {
+    background-image: url(../img/projet-3d.png);
+	background-size: cover;
+}
+
+#projets-web {
+    background-image: url(../img/projet-web.png);
+    background-size: cover;
+}
+
+
+/************************************/
+/************** GÉNÉRAL *************/
+/************************************/
+
+.bouton-voir {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top:10px;
+    padding-bottom: 10px;
     border: solid;
     border-color: white;
     border-width: 2px;
     border-radius: 5px;
-    margin-right: 1vw;
-}
-
-/************************************/
-/************ SÉPARATION ************/
-/************************************/
-
-.separation {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.img-background {
-    width: 90%;
-    border: solid;
-    border-color: white;
-    border-width: 2px;
+    width: 200px;
+    text-align: center;
 }
 
 
@@ -293,5 +349,12 @@ body {
     cursor: pointer;
     opacity: 0.8;
     scale: 1.1;
+    transition: 0.2s;
+}
+
+.bouton-voir:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    scale: 1.05;
     transition: 0.2s;
 }
