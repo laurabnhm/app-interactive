@@ -63,13 +63,6 @@ body {
     color: white;
 }
 
-.img-title {
-    width: 50vw;
-    opacity: 0.8;
-    margin-left: 8vw;
-    margin-bottom: 5vw;
-}
-
 
 /************************************/
 /********** PRÉSENTATION ************/
@@ -90,7 +83,7 @@ body {
 }
 
 .img-laura-bonhomme {
-    width: 450px;
+    width: 480px;
     margin-bottom: 35px;
 }
 
@@ -414,6 +407,13 @@ body {
     text-align: center;
     text-decoration:none;
     color: white;
+}
+
+.img-title {
+    width: 50vw;
+    opacity: 0.85;
+    margin-left: 8vw;
+    margin-bottom: 6vw;
 }
 
 
