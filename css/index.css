@@ -318,6 +318,39 @@ body {
     background-size: cover;
 }
 
+#bouton-voir-projets {
+    width: 200px;
+}
+
+
+/************************************/
+/*********** EXPÉRIENCES ************/
+/************************************/
+
+.section-experiences {
+    color: white;
+    font-family: mundial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 6vw;
+    width: 100%;
+    margin-bottom: 8vw;
+}
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8vw;
+}
+
+#bouton-voir-experiences {
+    width: 250px;
+}
+
 
 /************************************/
 /************** GÉNÉRAL *************/
@@ -331,8 +364,9 @@ body {
     border-color: white;
     border-width: 2px;
     border-radius: 5px;
-    width: 200px;
     text-align: center;
+    text-decoration:none;
+    color: white;
 }
 
 
