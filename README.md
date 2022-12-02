@@ -31,6 +31,7 @@
         - Réseaux sociaux Insta et LinkedIn (Liens qui ouvrent sur d'autres pages)
         - Bouton "Me recruter"
         Simple effet d'appariition.
+        https://www.flaticon.com/fr/auteurs/taufik/detailed-outline?author_id=400
 
     Essayer de faire un effet de fluidité sur la backgrround avec le mouvement de la souris.
 

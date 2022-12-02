@@ -138,7 +138,7 @@ body {
     border: solid;
     border-color: white;
     border-width: 2px;
-    background-image: url(../img/fleur.jpg);
+    background-image: url(../img/img-separation.jpg);
     background-size: cover;
 }
 
@@ -163,6 +163,7 @@ body {
     width: 160vw;
     height: 200px;
     padding-left: 8vw;
+    margin-top: 3vw;
 }
 
 .timeline {
@@ -256,6 +257,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 8vw;
+    margin-top: 2vw;
 }
 
 .a-la-une-parallax {
@@ -332,6 +334,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 8vw;
+    margin-top: 2vw;
 }
 
 .projets-themes {
@@ -350,7 +353,7 @@ body {
     height: 230px;
     border: solid;
     border-color: white;
-    border-width: 4px;
+    border-width: 2px;
     border-radius: 5px;
     margin-right: 2vw;
     margin-bottom: 2vw;
@@ -393,6 +396,80 @@ body {
 
 
 /************************************/
+/************* CONTACT **************/
+/************************************/
+
+.section-contact {
+    color: white;
+    font-family: mundial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 8vw;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8vw;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.img-cv {
+    width: 40%;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.contact-txt {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+}
+
+.contact-rs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.icon-rs {
+    width: 75px;
+    margin-right: 15px;
+}
+
+.contact-perso {
+    margin-bottom: 15px;
+}
+
+.contact-mail {
+    display: flex;
+    flex-direction: row;
+}
+
+.boutons-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+#bouton-telecharger-cv {
+    width: 240px;
+    margin-right: 15px;
+}
+
+#bouton-me-recruter {
+    width: 170px;
+}
+
+
+/************************************/
 /************** GÉNÉRAL *************/
 /************************************/
 
@@ -410,10 +487,10 @@ body {
 }
 
 .img-title {
-    width: 50vw;
+    width: 40vw;
     opacity: 0.85;
     margin-left: 8vw;
-    margin-bottom: 6vw;
+    margin-bottom: 4vw;
 }
 
 
@@ -438,4 +515,10 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     scale: 1.05;
     transition: 0.2s;
+}
+
+.icon-rs:hover {
+    cursor: pointer;
+    transform: rotate(90deg) scale(0.95);
+    transition: 0.5s;
 }
