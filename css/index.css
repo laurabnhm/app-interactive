@@ -58,7 +58,7 @@ body {
 }
 
 .menu-txt {
-    padding-right: 1vw;
+    padding-right: 3vw;
     text-decoration:none;
     color: white;
 }
@@ -75,11 +75,12 @@ body {
     position: relative;
     margin-bottom: 8vw;
     width: 100%;
-
 }
 
 .present-me {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .img-laura-bonhomme {
@@ -119,6 +120,15 @@ body {
     position: sticky;
     width: 450px;
     margin-left: 10vw;
+}
+
+#bouton-voir-presentation {
+    font-family: mundial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    width: 280px;
+    margin-left: 15px;
 }
 
 
@@ -521,4 +531,15 @@ body {
     cursor: pointer;
     transform: rotate(90deg) scale(0.95);
     transition: 0.5s;
+}
+
+
+/************************************/
+/************ RESPONSIVE ************/
+/************************************/
+
+@media screen and (max-width: 700px) {
+    .menu {
+      opacity: 0;
+    }
 }
