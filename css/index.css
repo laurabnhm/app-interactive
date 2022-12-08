@@ -174,7 +174,8 @@ body {
     width: 160vw;
     height: 200px;
     padding-left: 8vw;
-    margin-top: 3vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
 }
 
 .timeline {
@@ -267,6 +268,7 @@ body {
 .a-la-une-container {
     display: flex;
     flex-direction: column;
+    position: relative;
     padding-left: 8vw;
     margin-top: 2vw;
 }
@@ -317,6 +319,7 @@ body {
 
 #bouton-voir-projets-1 {
     position: absolute;
+    z-index: 4;
     width: 200px;
     top: 20vw;
     right: 13vw;

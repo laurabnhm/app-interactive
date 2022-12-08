@@ -27,21 +27,10 @@ gsap.from('#bouton-voir-presentation', {opacity:0, yPercent:10, duration:1.5, ea
 
 
 // FORMATION
-/*let width_container_formation = document.querySelector(".formation-container");
-gsap.to(".section-formation", {
-  scrollTrigger: {
-    trigger: ".section-formation",
-    pin: true,
-    end: () => width_container_formation.scrollWidth,
-    markers: true,
-  }
-})*/
-
 gsap.from(".formation-title", {
   scrollTrigger: {
     trigger: ".formation-title",
-    toggleActions: "restart none none reverse",
-    markers: true,
+    toggleActions: "restart none none none",
     start: "center 70%",
   },
   yPercent: 15,
@@ -51,7 +40,7 @@ gsap.from(".formation-title", {
 });
 
 gsap.fromTo(".formation-container", {
-  xPercent: 55,
+  //xPercent: 55,
   },
   {
   xPercent: -100, 
@@ -64,35 +53,53 @@ gsap.fromTo(".formation-container", {
     scrub: true,
     pin: ".gabarit",
     invalidateOnRefresh: true,
-    markers: false,
     anticipatePin: 1,
   }
 });
 
 
-/*
-let formation_timeline = gsap.timeline(scrollTimeline);
-formation_timeline.from(".formation-1", {opacity:0, yPercent:15, duration:1, ease:"power4"}),
-formation_timeline.from("#inter-ligne-lycee-prepa", {opacity:0, scale:0, duration:1, ease:"power4"}),
-formation_timeline.from(".formation-2", {opacity:0, yPercent:15, duration:1, ease:"power4"}),
-formation_timeline.from("#inter-ligne-prepa-bts", {opacity:0, scale:0, duration:1, ease:"power4"}),
-formation_timeline.from(".formation-3", {opacity:0, yPercent:15, duration:1, ease:"power4"}),
-formation_timeline.from("#inter-ligne-bts-inge", {opacity:0, scale:0, duration:1, ease:"power4"}),
-formation_timeline.from(".formation-4", {opacity:0, yPercent:15, duration:1, ease:"power4"}),
-formation_timeline.from("#inter-ligne-inge-canada", {opacity:0, scale:0, duration:1, ease:"power4"}),
-formation_timeline.from(".formation-5", {opacity:0, yPercent:15, duration:1, ease:"power4"});
+// PROJETS À LA UNE
+gsap.to("#parallax-box-1", {
+  y: -300,
+  ease: "none",
+  scrollTrigger: {
+    //trigger: ".a-la-une-container",
+    markers: {startColor: "blue", endColor: "red", fontSize: "12px"}, 
+    start: "center center",
+    toggleActions: "play none none reverse",
+    scrub: 1,
+  }, 
+});
 
-function scrollTimeline() {
-  ScrollTrigger.create({
-    animation: formation_timeline,
-    trigger:".formation-container",
-    markers: true,
-    start: "center 80%",
-    toggleActions: "restart restart none none",
-  }),
-  ScrollTrigger.create({
-    trigger:".section-formation",
-    end: "center 50%",
-    pin: true,
-  })
-};*/
+gsap.to("#parallax-box-2", {
+  y: 300,
+  ease: "none",
+  scrollTrigger: {
+    //trigger: ".a-la-une-container",
+    start: "center center",
+    toggleActions: "play none none reverse",
+    scrub: 1,
+  }, 
+});
+
+gsap.to("#parallax-box-3", {
+  y: 00,
+  ease: "none",
+  scrollTrigger: {
+    //trigger: ".a-la-une-container",
+    start: "center center",
+    toggleActions: "play none none reverse",
+    scrub: 1,
+  }, 
+});
+
+gsap.to("#bouton-voir-projets-1", {
+  y: -150,
+  ease: "none",
+  scrollTrigger: {
+    //trigger: ".a-la-une-container",
+    start: "center center",
+    toggleActions: "play none none reverse", 
+    scrub: 1,
+  }, 
+});
