@@ -27,7 +27,7 @@ gsap.from('#bouton-voir-presentation', {opacity:0, yPercent:10, duration:1.5, ea
 
 
 // FORMATION
-gsap.from(".formation-title", {
+/*gsap.from(".formation-title", {
   scrollTrigger: {
     trigger: ".formation-title",
     toggleActions: "restart none none none",
@@ -37,7 +37,7 @@ gsap.from(".formation-title", {
   duration: 3,
   opacity: 0,
   ease: "power4.out",
-});
+});*/
 
 gsap.fromTo(".formation-container", {
   //xPercent: 55,
@@ -72,7 +72,7 @@ gsap.to("#parallax-box-1", {
 });
 
 gsap.to("#parallax-box-2", {
-  y: 300,
+  y: 250,
   ease: "none",
   scrollTrigger: {
     //trigger: ".a-la-une-container",
@@ -102,4 +102,28 @@ gsap.to("#bouton-voir-projets-1", {
     toggleActions: "play none none reverse", 
     scrub: 1,
   }, 
+});
+
+
+// PROJETS
+gsap.from('#ligne-projets-1', {
+  xPercent: -100,
+  ease: "none", 
+  scrollTrigger: {
+    start: "center center",
+    end: "+=1900",
+    toggleActions: "play none none reverse", 
+    scrub: 1,
+  }
+});
+
+gsap.from('#ligne-projets-2', {
+  xPercent: -100,
+  ease: "none", 
+  scrollTrigger: {
+    start: "center center",
+    end: "+=2200",
+    toggleActions: "play none none reverse", 
+    scrub: 1,
+  }
 });
