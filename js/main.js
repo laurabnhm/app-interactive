@@ -6,10 +6,15 @@ gsap.registerPlugin(ScrollTrigger);
 //***********************//
 
 document.querySelector('.img-logo-menu').addEventListener('click', reloadPage);
+document.querySelector('.menu-hamburger').addEventListener('click', menuResponsive);
 
 function reloadPage() {
   console.log('reload');
   window.location.reload()
+}
+
+function menuResponsive() {
+  
 }
 
 
