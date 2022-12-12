@@ -61,9 +61,8 @@ gsap.fromTo(".formation-container", {
   scrollTrigger: {
     trigger: ".formation-container",
     start: "center 70%",
-    end: () => innerWidth * 2,
     scrub: true,
-    pin: ".gabarit",
+    pin: ".gabarit-int",
     invalidateOnRefresh: true,
     anticipatePin: 1,
   }
