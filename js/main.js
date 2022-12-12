@@ -127,3 +127,48 @@ gsap.from('#ligne-projets-2', {
     scrub: 1,
   }
 });
+
+// CONTACT
+gsap.from('.img-cv', {
+  scale: 0,
+  ease: "none", 
+  scrollTrigger: {
+    start: "center center",
+    end: "+=2900",
+    toggleActions: "play none none reverse", 
+    scrub: 1,
+  }
+});
+
+/*gsap.from('#icon-rs-insta', {
+  scale: 0,
+  ease: "none", 
+  scrollTrigger: {
+    start: "center center",
+    end: "+=3200",
+    toggleActions: "play none none reverse", 
+    scrub: 1,
+  }
+});
+
+gsap.from('#icon-rs-linkedin', {
+  scale: 0,
+  ease: "none", 
+  scrollTrigger: {
+    start: "center center",
+    end: "+=3200",
+    toggleActions: "play none none reverse", 
+    scrub: 1,
+  }
+});
+
+gsap.from('.txt-mail', {
+  scale: 0,
+  ease: "none", 
+  scrollTrigger: {
+    start: "center center",
+    end: "+=3200",
+    toggleActions: "play none none reverse", 
+    scrub: 1,
+  }
+});*/
