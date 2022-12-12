@@ -69,6 +69,7 @@ body {
     align-items: flex-end;
     padding-right: 3vw;
     display: none;
+    z-index: 200;
 }
 
 #ligne-hamburger-1 {

@@ -14,7 +14,14 @@ function reloadPage() {
 }
 
 function menuResponsive() {
-  
+  document.querySelector('#ligne-hamburger-3').style.opacity = 0;
+  document.querySelector('#ligne-hamburger-1').style.transform = 'translate(0px, 7px) rotate(45deg)';
+  document.querySelector('#ligne-hamburger-2').style.transform = 'translate(0px, -7px) rotate(-45deg)';
+  document.querySelector('#ligne-hamburger-1').style.transition = '0.3s';
+  document.querySelector('#ligne-hamburger-2').style.transition = '0.3s';
+
+  document.querySelector('.gabarit-int').style.filter = 'blur(10px)';
+  document.querySelector('.gabarit-int').style.position = 'fixed'; //MARCHE PAS
 }
 
 
