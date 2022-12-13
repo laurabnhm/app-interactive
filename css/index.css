@@ -96,12 +96,16 @@ body {
 }
 
 .menu-hamburger-open {
-    position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+    align-items: center;    margin-top: 100px;
     z-index: 300;
+    position: fixed;
+    /*background-image: url(../img/background-1.png);*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .menu-txt-hamburger {
@@ -112,10 +116,10 @@ body {
     font-size: 24px;
     text-decoration: none;
     margin-bottom: 15px;
-    display: none;
 }
 
 .background-menu-hamburger {
+    background-image: url(../img/background-1.png);
     opacity: 1;
 }
 
