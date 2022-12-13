@@ -39,7 +39,20 @@
 • PROJETS
 • CONTACT
 
+
+
 PROBLÈMES
     - ligne 556 CSS : menu-hamburger:hover fonctionne pas et ligne-hamburger fonctionne que quand c'est hover sur ligne-1 et ligne-2
     - ligne 69 CSS : align-items > flex-end qui ressemble à un flew-start en responsive, alors qu'il fonctionne bien en flex-end en pas responsive (display:block)
     - ligne 24 JS : position fixed du background quand on ouvre le menu hamburger
+
+
+
+.menu-hamburger-open : z-index 300
+.menu-hamburger : z-index 200
+.section-menu : z-index 100
+.background-menu-hamburger : z-index 50
+#bouton-voir-projets-1 : z-index 4
+#parallax-box-3 : z-index 3
+#parallax-box-2 : z-index 2
+#parallax-box-1 : z-index 1

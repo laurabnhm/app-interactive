@@ -59,7 +59,7 @@ body {
 
 .menu-txt {
     padding-right: 3vw;
-    text-decoration:none;
+    text-decoration: none;
     color: white;
 }
 
@@ -93,6 +93,30 @@ body {
     width: 50px;
     height: 3px;
     border-radius: 2px;
+}
+
+.menu-hamburger-open {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    z-index: 300;
+}
+
+.menu-txt-hamburger {
+    color: white;
+    font-family: mundial, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 24px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.background-menu-hamburger {
+    opacity: 1;
 }
 
 
@@ -559,6 +583,11 @@ body {
     transition: 0.2s;
 } 
 
+.menu-txt-hamburger:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 .img-logo-menu:hover {
     cursor: pointer;
     opacity: 0.8;
@@ -591,7 +620,10 @@ body {
     }
 
     .menu-hamburger {
-        display: block;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
 
 }
