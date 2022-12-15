@@ -19,12 +19,10 @@ function menuResponsive() {
   menu_count_click++;
   console.log(menu_count_click);
 
-  if (menu_count_click %2 == 1 ) {
+  if (menu_count_click % 2 == 1) {
     afficheMenu();
     console.log('afficheMenu');
-  }
-
-  else {
+  } else {
     effaceMenu();
     console.log('effaceMenu');
   }
@@ -40,7 +38,7 @@ function afficheMenu() {
 
   document.querySelector('.menu-hamburger-open').style.display = 'flex';
   document.querySelector('body').style.overflow = 'hidden';
-  
+
   document.querySelector('.section-presentation').style.display = 'none';
   document.querySelector('.separation').style.display = 'none';
   document.querySelector('.section-formation').style.display = 'none';
@@ -76,11 +74,45 @@ function effaceMenu() {
 
 
 // PRESENTATION
-gsap.from('.img-illustration-laura', {opacity:0, scale:0.7, duration:1.5, ease: "power4.out", delay:0.8});
-gsap.from('.img-laura-bonhomme', {opacity:0, yPercent:10, duration:1.5, ease: "power4.out", delay:0.8});
-gsap.from('.txt-jobs', {opacity:0, yPercent:10, duration:1.5, ease: "power4.out", delay:1.2});
-gsap.from('.ligne', {opacity:0, scale:0, duration:1.5, ease: "power4.out", delay:1.6});
-gsap.from('#bouton-voir-presentation', {opacity:0, yPercent:10, duration:1.5, ease: "power4.out", delay:2});
+gsap.from('.img-illustration-laura', {
+  opacity: 0,
+  scale: 0.7,
+  duration: 1.5,
+  ease: "power4.out",
+  delay: 0.8
+});
+
+gsap.from('.img-laura-bonhomme', {
+  opacity: 0,
+  yPercent: 10,
+  duration: 1.5,
+  ease: "power4.out",
+  delay: 0.8
+});
+
+gsap.from('.txt-jobs', {
+  opacity: 0,
+  yPercent: 10,
+  duration: 1.5,
+  ease: "power4.out",
+  delay: 1.2
+});
+
+gsap.from('.ligne', {
+  opacity: 0,
+  scale: 0,
+  duration: 1.5,
+  ease: "power4.out",
+  delay: 1.6
+});
+
+gsap.from('#bouton-voir-presentation', {
+  opacity: 0,
+  yPercent: 10,
+  duration: 1.5,
+  ease: "power4.out",
+  delay: 2
+});
 
 
 // FORMATION
@@ -96,20 +128,35 @@ gsap.from('#bouton-voir-presentation', {opacity:0, yPercent:10, duration:1.5, ea
   ease: "power4.out",
 });*/
 
-gsap.to(".formation-container", 
-  {
-  xPercent: -100, 
-  x: () => innerWidth,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".formation-container",
-    start: "center 70%",
-    scrub: true,
-    pin: ".gabarit-int",
-    invalidateOnRefresh: true,
-    anticipatePin: 1,
+
+const media_query_1150 = window.matchMedia('(max-width: 1150px)');
+media_query_1150.addListener(gsapFormation);
+gsapFormation(media_query_1150);
+
+function gsapFormation(e) {
+
+  if (e.matches) {
+    console.log("test if");
+  } 
+  else {
+    console.log("test else");
+    gsap.to(".formation-container", {
+      xPercent: -100,
+      x: () => innerWidth,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".formation-container",
+        start: "center 70%",
+        scrub: true,
+        pin: ".gabarit-int",
+        invalidateOnRefresh: true,
+        anticipatePin: 1,
+      }
+    })
   }
-});
+
+}
+
 
 
 // PROJETS À LA UNE
@@ -118,22 +165,26 @@ gsap.to("#parallax-box-1", {
   ease: "none",
   scrollTrigger: {
     //trigger: ".a-la-une-container",
-    markers: {startColor: "blue", endColor: "red", fontSize: "12px"}, 
+    markers: {
+      startColor: "blue",
+      endColor: "red",
+      fontSize: "12px"
+    },
     start: "center center",
     toggleActions: "play none none reverse",
     scrub: 1,
-  }, 
+  },
 });
 
 gsap.to("#parallax-box-2", {
-  y: 250,
+  y: 220,
   ease: "none",
   scrollTrigger: {
     //trigger: ".a-la-une-container",
     start: "center center",
     toggleActions: "play none none reverse",
     scrub: 1,
-  }, 
+  },
 });
 
 gsap.to("#parallax-box-3", {
@@ -144,7 +195,7 @@ gsap.to("#parallax-box-3", {
     start: "center center",
     toggleActions: "play none none reverse",
     scrub: 1,
-  }, 
+  },
 });
 
 gsap.to("#bouton-voir-projets-1", {
@@ -153,43 +204,44 @@ gsap.to("#bouton-voir-projets-1", {
   scrollTrigger: {
     //trigger: ".a-la-une-container",
     start: "center center",
-    toggleActions: "play none none reverse", 
+    toggleActions: "play none none reverse",
     scrub: 1,
-  }, 
+  },
 });
 
 
 // PROJETS
 gsap.from('#ligne-projets-1', {
   xPercent: -100,
-  ease: "none", 
+  ease: "none",
   scrollTrigger: {
     start: "center center",
-    end: "+=1900",
-    toggleActions: "play none none reverse", 
+    end: "+=1300",
+    toggleActions: "play none none reverse",
     scrub: 1,
   }
 });
 
 gsap.from('#ligne-projets-2', {
   xPercent: -100,
-  ease: "none", 
+  ease: "none",
   scrollTrigger: {
     start: "center center",
-    end: "+=2200",
-    toggleActions: "play none none reverse", 
+    end: "+=1500",
+    toggleActions: "play none none reverse",
     scrub: 1,
   }
 });
 
+
 // CONTACT
 gsap.from('.img-cv', {
   scale: 0,
-  ease: "none", 
+  ease: "none",
   scrollTrigger: {
     start: "center center",
-    end: "+=2900",
-    toggleActions: "play none none reverse", 
+    end: "+=2300",
+    toggleActions: "play none none reverse",
     scrub: 1,
   }
 });

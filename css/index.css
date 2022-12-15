@@ -120,7 +120,7 @@ body {
 
 .background-menu-hamburger {
     background-image: url(../img/background-1.png);
-    opacity: 1;
+    z-index: 50;
 }
 
 
@@ -130,11 +130,13 @@ body {
 
 .section-presentation {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
     margin-bottom: 8vw;
     width: 100%;
+
 }
 
 .present-me {
@@ -617,10 +619,38 @@ body {
 /************ RESPONSIVE ************/
 /************************************/
 
+
+@media screen and (max-width: 1150px) {
+
+    .section-presentation {
+        flex-direction: column;
+    }
+
+    .formation-container {
+        flex-direction: row;
+    }
+
+    .timeline {
+        flex-direction: column;
+    }
+
+    .formation-txt {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inter-ligne {
+        width: 3px;
+        height: 20vw;
+    }
+
+}
+
+
 @media screen and (max-width: 700px) {
 
     .menu {
-      display: none;
+        display: none;
     }
 
     .menu-hamburger {
