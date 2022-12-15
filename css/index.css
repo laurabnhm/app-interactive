@@ -255,8 +255,8 @@ body {
 
 .formation-annee {
     font-weight: 600;
-    font-size: 1.2vw;
-    width: 8vw;
+    font-size: 1.2rem;
+    width: 135px;
     background-color : rgba(255, 255, 255, 0.2);
     border: solid;
     border-width: 2px;
@@ -273,19 +273,19 @@ body {
 }
 
 #inter-ligne-lycee-prepa {
-    width: 21.1vw;
+    width: 20vw;
 }
 
 #inter-ligne-prepa-bts {
-    width: 15.3vw;
+    width: 14.3vw;
 }
 
 #inter-ligne-bts-inge {
-    width: 23vw;
+    width: 21.5vw;
 }
 
 #inter-ligne-inge-canada {
-    width: 27.1vw;
+    width: 25.7vw;
 }
 
 .formation-txt {
@@ -300,17 +300,17 @@ body {
 
 .formation-diplome {
     font-weight: 600;
-    font-size: 1.9vw;
+    font-size: 1.9rem;
 }
 
 .formation-mention {
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 1rem;
 }
 
 .formation-lieu {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     opacity: 0.8;
 }
 
@@ -330,7 +330,7 @@ body {
     justify-content: flex-start;
     margin-top: 6vw;
     width: 100%;
-    margin-bottom: 8vw;
+    margin-bottom: 6vw;
 }
 
 .a-la-une-container {
@@ -357,8 +357,8 @@ body {
     background-image: url(../img/projet-3d.png);
 	background-size: cover;
     z-index: 2;
-    width: 350px;
-    height: 250px;
+    width: 21.5vw;
+    height: 14vw;
     position: absolute;
     left: 12vw;
 }
@@ -367,8 +367,8 @@ body {
     background-image: url(../img/projet-design.png);
 	background-size: cover;
     z-index: 1;
-    width: 600px;
-    height: 350px;
+    width: 36vw;
+    height: 21vw;
     position: absolute;
     top: 6vw;
     left: 25vw;
@@ -378,8 +378,8 @@ body {
     background-image: url(../img/projet-photo.png);
 	background-size: cover;
     z-index: 3;
-    width: 300px;
-    height: 200px;
+    width: 18.7vw;
+    height: 12.2vw;
     position: absolute;
     top: 4vw;
     right: 20vw;
@@ -625,11 +625,54 @@ body {
 /************ RESPONSIVE ************/
 /************************************/
 
+@media screen and (max-width: 1350px) {
+
+    #inter-ligne-lycee-prepa {
+        width: 19vw;
+    }
+    
+    #inter-ligne-prepa-bts {
+        width: 13.1vw;
+    }
+    
+    #inter-ligne-bts-inge {
+        width: 20.6vw;
+    }
+    
+    #inter-ligne-inge-canada {
+        width: 25.1vw;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+
+    #inter-ligne-lycee-prepa {
+        width: 18vw;
+    }
+    
+    #inter-ligne-prepa-bts {
+        width: 12.2vw;
+    }
+    
+    #inter-ligne-bts-inge {
+        width: 19.7vw;
+    }
+    
+    #inter-ligne-inge-canada {
+        width: 24.2vw;
+    }
+
+}
 
 @media screen and (max-width: 1150px) {
 
     .section-presentation {
         flex-direction: column;
+    }
+
+    .section-formation {
+        margin-bottom: 400px;
     }
 
     .formation-container {
@@ -639,6 +682,7 @@ body {
     .timeline {
         flex-direction: column;
         margin-right: 5vw;
+        margin-top: 13px;
     }
 
     .timeline-resp {
@@ -647,7 +691,7 @@ body {
 
     .inter-ligne {
         width: 3px!important;
-        height: 5vw;
+        height: 75px;
     }
 
     .formation-txt {
@@ -656,11 +700,39 @@ body {
     }
 
     .formation-box {
-        margin-bottom: 3vw;
+        margin-bottom: 34px;
     }
 
 }
 
+@media screen and (max-width: 800px) {
+
+    .section-formation {
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+
+    .formation-annee {
+        font-size: 0.8rem;
+        width: 80px;
+    }
+
+    .formation-diplome {
+        font-size: 1.4rem;
+    }
+
+    .formation-mention {
+        font-size: 0.7rem;
+    }
+
+    .formation-lieu {
+        font-size: 0.9rem;
+    }
+
+    .inter-ligne {
+        height: 57px;
+    }
+}
 
 @media screen and (max-width: 700px) {
 
@@ -673,6 +745,19 @@ body {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 519px) {
+    
+    body {
+        overflow-x: hidden!important;
+        width: 519px;
+    }
+
+    .section-menu {
+        position: fixed;
     }
 
 }

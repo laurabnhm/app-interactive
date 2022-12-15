@@ -133,12 +133,9 @@ media_query_1150.addListener(gsapFormation);
 gsapFormation(media_query_1150);
 
 function gsapFormation(e) {
-
   if (e.matches) {
-    console.log("test if");
   } 
   else {
-    console.log("test else");
     gsap.to(".formation-container", {
       xPercent: -100,
       x: () => innerWidth,
@@ -153,7 +150,6 @@ function gsapFormation(e) {
       }
     })
   }
-
 }
 
 
