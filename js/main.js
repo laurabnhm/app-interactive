@@ -128,7 +128,6 @@ gsap.from('#bouton-voir-presentation', {
   ease: "power4.out",
 });*/
 
-
 const media_query_1150 = window.matchMedia('(max-width: 1150px)');
 media_query_1150.addListener(gsapFormation);
 gsapFormation(media_query_1150);
@@ -156,7 +155,6 @@ function gsapFormation(e) {
   }
 
 }
-
 
 
 // PROJETS À LA UNE
