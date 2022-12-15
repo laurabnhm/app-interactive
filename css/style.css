@@ -643,6 +643,29 @@ body {
         width: 25.1vw;
     }
 
+    .a-la-une-title {
+        margin-bottom: 30px;
+    }
+
+    #parallax-box-2 {
+        top: 1vw;
+        left: 12vw;
+    }
+
+    #parallax-box-1 {
+        top: 6vw;
+        left: 25vw;
+    }
+
+    #parallax-box-3 {
+        top: 4vw;
+        right: 20vw;
+    }
+
+    #bouton-voir-projets-1 {
+        top: 22vw;
+        right: 13vw;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -703,6 +726,10 @@ body {
         margin-bottom: 34px;
     }
 
+    .section-a-la-une {
+        margin-bottom: 100px;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -734,7 +761,7 @@ body {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
 
     .menu {
         display: none;
@@ -745,19 +772,6 @@ body {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-    }
-
-}
-
-@media screen and (max-width: 519px) {
-    
-    body {
-        overflow-x: hidden!important;
-        width: 519px;
-    }
-
-    .section-menu {
-        position: fixed;
     }
 
 }
