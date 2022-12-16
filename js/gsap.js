@@ -66,11 +66,11 @@ function gsapFormation(e) {
       x: () => innerWidth,
       ease: "none",
       scrollTrigger: {
-        markers: {
+        /*markers: {
           startColor: "blue",
           endColor: "cyan",
           fontSize: "12px"
-        },
+        },*/
         trigger: ".formation-container",
         start: "center 70%",
         scrub: true,
@@ -99,11 +99,11 @@ function gsapALaUne(e) {
       y: -300,
       ease: "none",
       scrollTrigger: {
-        markers: {
+        /*markers: {
           startColor: "red",
           endColor: "pink",
           fontSize: "12px"
-        },
+        },*/
         //trigger: ".a-la-une-container",
         start: "center center",
         toggleActions: "play none none reverse",
