@@ -195,7 +195,7 @@ function gsapProjetsPhone(e) {
   else {
     gsapProjetsOrdi();
   }
-}*/
+}*/ /* À METTRE SOUS FORME DE ELSE IF */
 
 /******** SKILLS MEDIA QUERY ORDI *********/
 function gsapProjetsOrdi() {
@@ -227,13 +227,23 @@ function gsapProjetsOrdi() {
 /**************** CONTACT ****************/
 /*****************************************/
 
-gsap.from('.img-cv', {
-  scale: 0,
-  ease: "none",
-  scrollTrigger: {
-    start: "center center",
-    end: "+=2300",
-    toggleActions: "play none none reverse",
-    scrub: 1,
+const media_query_1025 = window.matchMedia('(max-width: 1025px)');
+media_query_1025.addListener(gsapContact);
+gsapContact(media_query_1025);
+
+function gsapContact(e) {
+  if (e.matches) {
+  } 
+  else {
+    gsap.from('.img-cv', {
+      scale: 0,
+      ease: "none",
+      scrollTrigger: {
+        start: "center center",
+        end: "+=2300",
+        toggleActions: "play none none reverse",
+        scrub: 1,
+      }
+    });
   }
-});
+}

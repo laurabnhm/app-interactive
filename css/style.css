@@ -443,32 +443,32 @@ body {
 }
 
 #projets-design {
-    background-image: url(../img/projet-design.png);
+    background-image: url(../img/projet-design-template.png);
     background-size: cover;
 }
 
 #projets-uxui {
-    background-image: url(../img/projet-uxui.jpg);
+    background-image: url(../img/projet-uxui-template.png);
     background-size: cover;
 }
 
 #projets-motion {
-    background-image: url(../img/projet-motion.png);
+    background-image: url(../img/projet-motion-template.png);
     background-size: cover;
 }
 
 #projets-photo {
-    background-image: url(../img/projet-photo.png);
+    background-image: url(../img/projet-photo-template.png);
     background-size: cover;
 }
 
 #projets-3d {
-    background-image: url(../img/projet-3d.png);
+    background-image: url(../img/projet-3d-template.png);
 	background-size: cover;
 }
 
 #projets-web {
-    background-image: url(../img/projet-web.png);
+    background-image: url(../img/projet-web-template.png);
     background-size: cover;
 }
 
@@ -607,6 +607,16 @@ body {
     transition: 0.2s;
 }
 
+.parallax-box:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.projets-box:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .bouton-voir:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.3);
@@ -732,6 +742,22 @@ body {
 
 }
 
+@media screen and (max-width: 900px) {
+
+    .icon-rs {
+        width: 50px;
+    }
+
+    .boutons-contact {
+        flex-direction: column;
+    }
+
+    #bouton-me-recruter {
+        margin-top: 10px;
+    }
+
+}
+
 @media screen and (max-width: 800px) {
 
     .section-formation {
@@ -774,4 +800,19 @@ body {
         justify-content: center;
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+
+    .img-laura-bonhomme {
+        width: 300px;
+    }
+
+    .txt-jobs {
+        font-size: 18px;
+    }
+
+    .img-illustration-laura {
+        width: 300px;
+    }
 }
