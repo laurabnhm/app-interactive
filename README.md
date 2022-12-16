@@ -1,5 +1,16 @@
 # portfolio
 
+____________________________________________________________________________
+
+POUR LE PROF  
+
+ • GSAP est capricieux, il semble que la page doit être réactualisée pour utilisée le responsive, c'est-à-dire à chaque redimmensionnement de fenêtre
+
+____________________________________________________________________________
+
+
+NOTES PERSONNELLES - ARBORESCENCE
+
 • ACCUEIL
 
     - Présentation
@@ -39,14 +50,16 @@
 • PROJETS
 • CONTACT
 
-
+____________________________________________________________________________
 
 PROBLÈMES
+
     - ligne 556 CSS : menu-hamburger:hover fonctionne pas et ligne-hamburger fonctionne que quand c'est hover sur ligne-1 et ligne-2
     - ligne 69 CSS : align-items > flex-end qui ressemble à un flew-start en responsive, alors qu'il fonctionne bien en flex-end en pas responsive (display:block)
     - ligne 24 JS : position fixed du background quand on ouvre le menu hamburger
 
 
+____________________________________________________________________________
 
 .menu-hamburger-open : z-index 300
 .menu-hamburger : z-index 200
